@@ -36,7 +36,7 @@ def monitor_stars(**kwargs):
     if latest_stars > 10000:
         subject = f"GitHub Alert for {URL}"
         content = f"The {URL} repository has received {latest_stars} stars since last check"
-        to='xiaoping@sapphireventures.com'
+        to='masked@masked.com'
 
         send_email(to=to, subject=subject, html_content=content)
 
